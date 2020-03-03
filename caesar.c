@@ -44,9 +44,9 @@ void decrypt(){
         if (text[i] == ' '){
             hasil = ' ';
         }else if(text[i] >= 'A' && text[i] <= 'Z'){
-            hasil = (text[i] - kunci - 'A') + 'A';
+            hasil = (text[i] - kunci - 'Z') + 'Z';
         }else if(text[i] >= 'a' && text[i] <= 'z'){
-            hasil = (text[i] - kunci - 'a') + 'a';
+            hasil = (text[i] - kunci - 'z') + 'z';
         }
         printf("%c", hasil);
     }
